@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day in my hometown, Jaipur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Jaipur</h1>
+        <h2>The Pink City, Through My Eyes</h2>
+        <p>Welcome! This is a website that features a day through Jaipur,
+          my hometown. Scroll to experience it.
+        
+           <br> 
+          Use the volume buttons to set your volume for the audios. At the bottom, 
+          you will find a compiled version of all the audios. These are my own, 
+          sourced from videos in my gallery. If you hover of the images, you can click
+          on them to play and pause the audio. 
+
+          <br>
+          Enjoy! 
+
+        </p>
+    </header>
+
+    <main>
+
+        <div class="volume-controls">
+    <p>Volume</p>
+
+    <button onclick="volumeDown()">(-)</button>
+    <button onclick="volumeUp()">(+)</button>
+</div>
+    <audio id="player"></audio>
+
+      <!--Enter Image and Enter Audio -->  
+<section>
+    <h2>01. Entering Jaipur</h2>
+
+    <img src="images/enter.jpeg"
+         alt="Entering Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('enter')">
+
+    <p>
+        Here we go, entering Jaipur. I was born in Jaipur, this is my parents'
+        hometown as well! Our whole family is from here. My grandparents are settled
+        here, and we visit quite often, such as during festivals of Holi and Diwali. 
+    </p>
+
+    <div class="audio-controls">
+        <button id="enter-button" onclick="toggleAudio('enter')">
+            Play
+        </button>
+    </div>
+</section>
+
+        <!-- Breakfast Image, Breakfast Audio -->
+
+<section>
+    <h2>02. Breakfast</h2>
+
+    <img src="images/breakfast.jpeg"
+         alt="Breakfast in Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('breakfast')">
+
+     <p>
+        Warm onion kachoris welcome me for breakfast as I sit on the porch on my grandparents house. They tell me 
+        how happy they are to see me!
+    </p>
+
+    <button id="breakfast-button" onclick="toggleAudio('breakfast')">
+        Play
+    </button>
+
+
+</section>
+
+
+<!-- Rain Image and Rain Audio -->
+
+<section>
+    <h2>03. Afternoon Rain</h2>
+
+    <img src="images/rain.jpeg"
+         alt="Rainy afternoon in Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('rain')">
+
+    <p>
+        After a lovely breakfast, I rest my eyes to the sound of rain overhead. Sleep consumes
+        me after the long morning drive, a full stomach, and the love of my grandparents. 
+    </p>
+
+    <button id="rain-button" onclick="toggleAudio('rain')">
+        Play
+    </button>
+</section>
+
+
+<!-- Auto Image and Auto Audio  -->
+<section>
+    <h2>04. An Auto Ride</h2>
+
+    <img src="images/auto.jpeg"
+         alt="Riding in an auto in Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('auto')">
+
+    <p>
+        Oh, how I love auto rides! Let's head to my favourite place in Jaipur. Listen to
+        the sounds of traffic, ironically peaceful. 
+    </p>
+
+    <button id="auto-button" onclick="toggleAudio('auto')">
+        Play
+    </button>
+</section>
+
+
+<!-- Sandwich Image, Sandwich Audio -->
+<section>
+    <h2>05. Bombay Sandwich in Bapu Bazaar</h2>
+
+   <img src="images/sandwich.jpeg"
+         alt="Bombay sandwich in Bapu Bazaar"
+         class="audio-image"
+         onclick="toggleAudio('sandwich')">
+
+     <p> We're here in Bappu Bazaar, also known as Link Road. It is home to my absolute favourite sandwich since my childhood, 
+        no one does it like the uncle here! I get it topped with grated Amul cheese, 
+        and don't forget to ask for extra ketchup on the side. 
+    </p>
+
+    <button id="sandwich-button" onclick="toggleAudio('sandwich')">
+        Play
+    </button>
+
+         
+
+</section>
+
+
+<!-- Mahal Image and Road Audio -->
+<section>
+    <h2>06. Hawa Mahal</h2>
+
+    <img src="images/mahal.jpeg"
+         alt="Hawa Mahal in Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('road')">
+
+    <p> 
+        Hawa Mahal - with it's beautiful stained glass windows, intricate white carvings
+        and rusted pink colour - is a must see sight! 
+    </p>
+
+    <button id="road-button" onclick="toggleAudio('road')">
+        Play
+    </button>
+</section>
+
+
+<!-- Bazaar Image, Sunset audio -->
+<section>
+    <h2>07. Sunset in Bapu Bazaar</h2>
+
+    <img src="images/bazaar.jpeg"
+         alt="Sunset in Bapu Bazaar"
+         class="audio-image"
+         onclick="toggleAudio('sunset')">
+
+    <p>
+        I watch the sun set as I roam the streets, buying knick-knacks like
+        jewellery, tops, home decor, and feeding myself to the special yoghurt
+        gol-gappe!
+    </p>
+
+    <button id="sunset-button" onclick="toggleAudio('sunset')">
+        Play
+    </button>
+
+</section>
+
+
+<!-- Music Image and Music Audio -->
+<section>
+    <h2>08. A Musical Evening</h2>
+
+    <img src="images/music.jpeg"
+         alt="Live musical performance in Jaipur"
+         class="audio-image"
+         onclick="toggleAudio('music')">
+        
+    <p> 
+        I end the night by seeing a lovely traditional music performance, 
+        using an instrument called - 'Sarangi.' The performance moves me
+        because of the emotions of the players, their soulful voice, and the familiarity of old, bollywood
+        songs from my parents time.  
+    </p>
+
+    <button id="music-button" onclick="toggleAudio('music')">
+        Play
+    </button>
+</section>
+
+
+<!-- Full Day Soundscape -->
+<section>
+    <h2>Listen to a Day in Jaipur</h2>
+
+    <p>Eight moments, one soundscape.</p>
+
+    <audio controls id="fullPlayer">
+        <source src="audio/full.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

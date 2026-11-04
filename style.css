@@ -1,0 +1,101 @@
+
+
+body {
+    background-color: #FAF2EC;
+    color: #754B40;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+header {
+    background-color: #F2DADB;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 65px;
+    margin: 0;
+}
+
+header h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-style: italic;
+    color: #A87078;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Photograph Details */
+
+section {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Photographs */
+
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* Hover effect for clickable photographs */
+
+.audio-image {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.audio-image:hover {
+    opacity: 0.8;
+}
+
+/* Audio buttons */
+
+button {
+    background-color: #F2DADB;
+    color: #754B40;
+    border: 1px solid #A87078;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #E8C5C8;
+}
+
+/* Mobile-friendly images */
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 48px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+}
